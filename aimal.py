@@ -1,8 +1,16 @@
-mport sys
-def deafult():
-    print("hello")
-def main():
-    default()
+import sys
 
-if _name_=='_main_':
+def cat():
+    print('Meow')
+
+def default():
+    print('Hello')
+
+def main():
+    if sys.argv[1] == 'cat':
+        cat()
+    else:
+        default()
+
+if __name__ == '__main__':
     main()
